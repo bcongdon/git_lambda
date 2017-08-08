@@ -8,12 +8,12 @@ def setup(target_directory='/tmp/git',
     tar = tarfile.open(os.path.join(dir_path, 'git-2.4.3.tar'))
     tar.extractall(target_directory)
 
-    bin_path = os.path.join(target_directory, 'usr', 'bin')
+    bin_path = os.path.join(target_directory, 'git', 'bin')
 
     template_dir = os.path.join(
         target_directory,
         'usr',
-        'shate',
+        'share',
         'git-core',
         'templates'
     )
