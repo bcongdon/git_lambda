@@ -15,4 +15,4 @@ RUN curl https://www.kernel.org/pub/software/scm/git/git-2.14.0.tar.gz > git.tar
     make install && \
     cd / && \
     rm git.tar.gz && \
-    tar -zcvf git.tar.gz git-2.14.0
+    tar -zcvf git.tar.gz git
