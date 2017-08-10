@@ -13,5 +13,7 @@ RUN curl https://www.kernel.org/pub/software/scm/git/git-2.14.0.tar.gz > git-sou
     ./configure --prefix=/git CFLAGS="${CFLAGS} -static-libgcc" && \
     make all && \
     make install && \
+    cd /git/share && \
+    find . -maxdepth 1 ! -name 'git-core' ! -path . -delete && \
     cd / && \
     tar -zcvf git-2.14.0.tar.gz git
