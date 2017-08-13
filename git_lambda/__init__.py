@@ -5,7 +5,7 @@ import tarfile
 def setup(target_directory='/tmp/git',
           update_env=True):
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    tar = tarfile.open(os.path.join(dir_path, 'git-2.14.0.tar.gz'))
+    tar = tarfile.open(os.path.join(dir_path, 'git-2.14.0.tar'))
     tar.extractall(target_directory)
     git_path = os.path.join(target_directory, 'git')
 

@@ -16,4 +16,5 @@ RUN curl https://www.kernel.org/pub/software/scm/git/git-2.14.0.tar.gz > git-sou
     cd /git/share && \
     find . -maxdepth 1 ! -name 'git-core' ! -path . -delete && \
     cd / && \
-    tar -zcvf git-2.14.0.tar.gz git
+    tar -zcvf git-2.14.0.tar.gz git && \
+    mv git-2.14.0.tar.gz git-2.14.0.tar
